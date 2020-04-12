@@ -2,10 +2,22 @@ import React,{ useState }from 'react';
 
 function HookCounter()
 {
-    const [count,setCount] = useState(0)
+    const initialCount=0
+    const [count,setCount] = useState(initialCount)
+    const incrementfive= () =>
+    {
+        for(let i=0;i<5;i++)
+        {
+            setCount(prev => prev+1)
+        }
+    }
     return(
         <div>
-            <button onClick={() => setCount(count +1)}>Count {count}</button> 
+            Count: {count}
+            <button onClick={() => setCount(initialCount)}>Reset</button>
+            <button onClick={() => setCount(count+1)}>Increment</button>
+            <button onClick={() => setCount(count-1)}>Decrement</button>
+            <button onClick={incrementfive}>Increnmentfive</button>
         </div>
     )
 }
