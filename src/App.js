@@ -7,6 +7,7 @@ import HooksCounterFour from './components/HookCounter4';
 import HooksCounterOneUseEffect from './components/HooksuseEffect1';
 import HooksMouse from './components/HookMouseuseEffect';
 import MouseContainer from './components/MouseComponent';
+import DataFetch from './components/DataFetching';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <HooksCounterOneUseEffect/>
       <HooksMouse/>
       <MouseContainer/>
+      <DataFetch/>
     </div>
   );
 }
