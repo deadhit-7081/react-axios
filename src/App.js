@@ -1,19 +1,12 @@
 import React from 'react';
 import './App.css';
-import ComponentC from './components/UseContectC';
+import CounterOne from './components/useReducercount1';
 
-export const UserContext = React.createContext()
-export const GammingContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value = {"Jai"}>
-        <GammingContext.Provider value = {"DeadHit"}>
-          <ComponentC/>
-        </GammingContext.Provider>
-      </UserContext.Provider>
-
+      <CounterOne/>
     </div>
   );
 }
