@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import CounterOne from './components/useReducercount1';
-import CounterTwo from './components/useReducerCount2';
+import DataFetchingOne from './components/DatafetchuseReducer';
+
 
 
 function App() {
   return (
     <div className="App">
-      <CounterOne/>
-      <CounterTwo/>
+      <DataFetchingOne/>
     </div>
   );
 }
